@@ -96,7 +96,7 @@ while not crashed:
 			crashed = True
 		elif event.type == pygame.MOUSEBUTTONDOWN:
 			pygame.draw.rect(screen, (233, 232, 90), (170, 480, 80, 50))
-			pygame.mixer.music.load('tone (2).wav')
+			pygame.mixer.music.load(os.path.join('tones', 'tone (0).wav'))
 			pygame.mixer.music.play(0)
 			now = pygame.time.get_ticks()
 			if now-last <= 400:
@@ -128,7 +128,7 @@ while not crashed:
 					print(temp1, temp2)
 					if temp1 != temp2:
 						time.sleep(0.3)
-						pygame.mixer.music.load('tone (3).wav')
+						pygame.mixer.music.load(os.path.join('tones', 'tone (3).wav'))
 						pygame.mixer.music.play(0)
 						fail += 1
 						pygame.draw.rect(screen, (233, 232, 90), (530, 50, 60, 50))
@@ -138,12 +138,12 @@ while not crashed:
 						pygame.draw.rect(screen, (233, 232, 100), (200, 50, 80, 50))
 						success[pre_y*6+pre_x] = True
 						success[(y//60)*6+(x//60)] = True
-						pygame.mixer.music.load('tone (1).wav')
+						pygame.mixer.music.load(os.path.join('tones', 'tone (1).wav'))
 						pygame.mixer.music.play(0)
 						count += 1
 						if count == 18:
 							finish = True
-							pygame.mixer.music.load('jazz.wav')
+							pygame.mixer.music.load(os.path.join('tones', 'tone (2).wav'))
 							pygame.mixer.music.play(0)
 					layout(x//60, y//60)
 					layout(pre_x, pre_y)
