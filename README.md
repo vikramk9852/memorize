@@ -8,6 +8,6 @@ Memorize the location of numbers and match the location of same numbers
   &emsp;&emsp;os  
   &emsp;&emsp;random  
 ## Controls:
-  &emsp;Single mouse Click to show the number at current mouse location(Increases no of Clicks by 1)  
-  &emsp;Double mouse Click to select a number at current mouse location to match with next mouse click(In case of failure increases Failure counter by 1) 
+- Single mouse Click to show the number at current mouse location(Increases no of Clicks by 1)  
+- Double mouse Click to select a number at current mouse location to match with next mouse click(In case of failure increases Failure counter by 1) 
  
